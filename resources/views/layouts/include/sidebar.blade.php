@@ -38,7 +38,7 @@
                 </span>
             </a>
             <ul class="treeview-menu">
-                <li><a href="pages/layout/top-nav.html"><i class="fa fa-circle-o"></i> Categories</a></li>
+                <li><a href="{{URL::to('/category/index')}}"><i class="fa fa-circle-o"></i> Categories</a></li>
                 <li><a href="pages/layout/boxed.html"><i class="fa fa-circle-o"></i> Products</a></li>
                 <li><a href="pages/layout/fixed.html"><i class="fa fa-circle-o"></i> Recurring Profiles<</a></li>
                 <li><a href="pages/layout/collapsed-sidebar.html"><i class="fa fa-circle-o"></i> Filters</a></li>

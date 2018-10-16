@@ -25,16 +25,23 @@
             <header class="main-header">
                 @include('layouts.include.header')
             </header>
-            
+
             <aside class="main-sidebar">
                 @include('layouts.include.sidebar')
             </aside>
-            
+
             <div class="content-wrapper">
-                @yield('content')
+                <section class="content-header">
+                    @include('layouts.include.breadcrumb')
+                </section>
+                <!-- Main content -->
+                <section class="content">
+                    @yield('content')
+                </section>
+                <!-- !Main content -->
             </div>
         </div>
-        
+
         <script src="{{ asset('css/bower_components/jquery/dist/jquery.min.js') }}" ></script>
         <script src="{{ asset('css/bower_components/jquery-ui/jquery-ui.min.js') }}" ></script>
         <script src="{{ asset('css/bower_components/bootstrap/dist/js/bootstrap.min.js') }}" ></script>
@@ -49,9 +56,9 @@
         <script src="{{ asset('plugins/bootstrap-wysihtml5/bootstrap3-wysihtml5.all.min.js') }}" ></script>
         <script src="{{ asset('css/bower_components/fastclick/lib/fastclick.js') }}" ></script>
         <script src="{{ asset('css/dist/js/adminlte.min.js') }}" ></script>
-        
+
 <!--        <script src="{{ asset('css/dist/js/demo.js') }}" ></script>-->
-        
+
         <script src="{{ asset('js/app.js') }}"></script>
     </body>
 </html>

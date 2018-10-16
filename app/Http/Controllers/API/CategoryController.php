@@ -15,8 +15,9 @@ class CategoryController extends BaseController {
      * @return \Illuminate\Http\Response
      */
     public function index() {
-        $products = Category::all();
-        return $this->sendResponse($products->toArray(), 'Products retrieved successfully.');
+        $modelCategory = new Category();
+        $listCategory = $modelCategory->listAllCategory();
+        return $this->sendResponse($listCategory->toArray(), 'Products retrieved successfully.');
     }
 
     /**
